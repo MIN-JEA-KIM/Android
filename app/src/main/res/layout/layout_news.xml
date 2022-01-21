@@ -1,0 +1,54 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/newsThumbnailImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_thumbnail" />
+
+    <TextView
+        android:id="@+id/newsTitleTextView"
+        style="@style/viewParent.headerText"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/newsThumbnailImageView"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Back to beige: decoding this \nseason’s most unlikely, of the "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/newsDetailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsTitleTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/newsThumbnailImageView"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="들루와 드루와 엘리베이터로 드루와 "
+        android:textColor="@color/featuredNewsContentColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 hrs ago"
+        android:layout_alignParentBottom="true"
+        android:textColor="#8E909A"
+        android:textSize="11sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/newsThumbnailImageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read More >"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        android:textColor="#019AE8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
